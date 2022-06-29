@@ -23,6 +23,8 @@ const checkAge = function (age) {
 		}
 	} else console.log('Not an intrger value')
 }
+
+
 checkAge(17);
 checkAge(18);
 checkAge(60);
