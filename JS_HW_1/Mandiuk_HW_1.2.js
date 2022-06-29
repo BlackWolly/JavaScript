@@ -11,9 +11,7 @@ const age2 = 18;
 const age3 = 60;
 
 const checkAge = function (age) {
-	age = Number(age);
-	console.log(age);
-	if (age) {
+	if (typeof age == 'number') {
 		if (age < age2) {
 			console.log(`You don't have access cause your age is ${age}. It's less then `);
 		} else if (age >= age2 && age < age3) {
@@ -23,10 +21,7 @@ const checkAge = function (age) {
 		} else {
 			console.log('Technical work');
 		}
-	} else {
-		console.log('Not an integer value');
-	}
-
+	} else console.log('Not an intrger value')
 }
 checkAge(17);
 checkAge(18);
